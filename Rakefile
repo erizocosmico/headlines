@@ -49,3 +49,10 @@ task :spec do
   Rake::Task['db:migrate'].execute
   Rake::Task['test'].execute
 end
+
+namespace :test do
+  task :coverage do
+    ENV['COVERAGE'] = 'true'
+    Rake::Task['spec'].invoke
+  end
+end
