@@ -1,2 +1,2 @@
-# headlines-server
+# headlines
 A feed reader without bullshit.
