@@ -42,6 +42,10 @@ namespace :db do
     Sequel::Migrator.run(DB, 'migrations')
     Rake::Task['db:version'].execute
   end
+
+  task :erase do
+    FileUtils.rm ENV['HEADLINES_DATABASE_URL'].sub 'sqlite:/', '.'
+  end
 end
 
 task default: :test
@@ -54,5 +58,6 @@ namespace :test do
   task :coverage do
     ENV['COVERAGE'] = 'true'
     Rake::Task['spec'].invoke
+    Rake::Task['db:erase'].execute
   end
 end
