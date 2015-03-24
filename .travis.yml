@@ -6,19 +6,7 @@ addons:
   code_climate:
     repo_token: cff1b959a9e4eb3dacd741d7942c9cb480d7a78fd31e85413afc1cc2224573c0
 rvm:
-  - 2.0.0
   - 2.1.0
-  - 2.1.1
-  - 2.1.2
-  - 2.1.3
-  - 2.1.4
   - 2.1.5
   - 2.2.0
   - 2.2.1
-  - rbx-2
-  - jruby-head
-
-matrix:
-  allow_failures:
-    - rvm: rbx-2
-    - rvm: jruby-head
