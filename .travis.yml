@@ -2,6 +2,9 @@ language: ruby
 sudo: false
 cache: bundler
 script: 'bundle exec rake test:coverage LOTUS_ENV=test'
+addons:
+  code_climate:
+    repo_token: cff1b959a9e4eb3dacd741d7942c9cb480d7a78fd31e85413afc1cc2224573c0
 rvm:
   - 2.0.0
   - 2.1.0

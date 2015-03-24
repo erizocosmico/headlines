@@ -6,18 +6,8 @@ require 'minitest/autorun'
 require 'rack/test'
 
 if ENV['COVERAGE'] == 'true'
-  require 'simplecov'
-  require 'coveralls'
-
-  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-      SimpleCov::Formatter::HTMLFormatter,
-      Coveralls::SimpleCov::Formatter
-  ]
-
-  SimpleCov.start do
-    command_name 'test'
-    add_filter   'test'
-  end
+  require 'codeclimate-test-reporter'
+  CodeClimate::TestReporter.start
 end
 
 Lotus::Application.preload!

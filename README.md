@@ -1,2 +1,2 @@
-# headlines [![Build Status](https://travis-ci.org/mvader/headlines.svg)](https://travis-ci.org/mvader/headlines)
+# headlines [![Build Status](https://travis-ci.org/mvader/headlines.svg)](https://travis-ci.org/mvader/headlines) [![Code Climate](https://codeclimate.com/github/mvader/headlines/badges/gpa.svg)](https://codeclimate.com/github/mvader/headlines) [![Test Coverage](https://codeclimate.com/github/mvader/headlines/badges/coverage.svg)](https://codeclimate.com/github/mvader/headlines)
 A feed reader without bullshit.
